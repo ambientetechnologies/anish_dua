@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; }
+
+.wrapper{
+	/* background-image: url("images/gradient.jpg") !important; */
+	background: #606c88;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	}
+
+.left{
+	height:auto;
+}
+.right{
+	/* position: relative; */
+	/* border: 1px solid; */
+	height:auto;
+}
+
+.text{
+	/* color:#6087FF; */
+	color: white;
+	/* line-height: 30px; */
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-top:25%;
+	/* left:2%;
+	right:2%; */
+	text-align:justify;
+}
+
+.right img{
+	width: auto;
+	height: 500px;
+	margin-top:14%;
+	/* margin: 0 auto; */
+	float: right;
+	border: 8px solid;
+}
+
+.signature{
+	color:white;
+	font-family:alex_brushregular;
+
+}
+.signature h1{
+	font-size: 52px;
+
+}
+.col-md-1{
+	margin: 5%;
+
+
+}
+.btn {
+	color:white;
+	padding:10px;
+	height:auto;
+	width:200px;
+	background-color:transparent;
+	border:2px solid #6087FF;
+	border-radius: 50px;
+}
+.btn a{
+	color:white;
+	text-decoration:none;
+	}
+
+.btn:hover{
+	background-color:#6087FF;
+	border: 2px solid #14458b;
+	color:white;
+
+}
+
+@media(max-width:768px)
+{.left .right{
+
+		width:100% !important;
+	 }
+	 /* .left{
+		  background-size: contain;
+			height:100vh;
+		} */
+	/* .right{
+		background-size:100%;
+	} */
+	/* .text{
+		text-align:justify;
+
+	} */
+
+		h3{
+			font-size:10px !important;
+		}
+		.btn a{
+			font-size:8px !important;
+		}
+
+}
+@media(max-width:992px){
+
+		/* .left{
+		background-position:left;
+	} */
+
+		h4{
+			font-size:14px !important;
+		}
+}
+@media(max-width:480px){
+		/* .btn{
+			padding:3px;
+			width:auto;
+		} */
+		.text , .signature , .btn a	{
+			/* color: black; */
+		}
+		.left{
+
+			height:80vh;
+		}
+		.right img{
+			height: 60vh;
+
+		}
+		.right{
+			float: none;
+			/* height:100vh; */
+			margin: 0;
+			text-align: center;
+
+		}
+		.wrapper{
+			height: auto;
+		}
+
+}
